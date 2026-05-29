@@ -1,0 +1,55 @@
+{
+  "conventional": {
+    "name": "Conventional Commits",
+    "description": "Follow the Conventional Commits specification",
+    "format": "<type>[optional scope]: <description>",
+    "types": {
+      "feat": "A new feature",
+      "fix": "A bug fix",
+      "docs": "Documentation only changes",
+      "style": "Changes that do not affect the meaning of the code",
+      "refactor": "A code change that neither fixes a bug nor adds a feature",
+      "perf": "A code change that improves performance",
+      "test": "Adding missing tests or correcting existing tests",
+      "build": "Changes that affect the build system or external dependencies",
+      "ci": "Changes to CI configuration files and scripts",
+      "chore": "Other changes that don't modify src or test files",
+      "revert": "Reverts a previous commit"
+    }
+  },
+  "gitmoji": {
+    "name": "GitMoji",
+    "description": "Use emoji for commit types",
+    "format": "<emoji> <description>",
+    "types": {
+      "✨": "Introduce new features",
+      "🐛": "Fix a bug",
+      "📝": "Add or update documentation",
+      "💄": "Add or update the UI and style files",
+      "♻️": "Refactor code",
+      "⚡": "Improve performance",
+      "✅": "Add, update, or pass tests",
+      "📦": "Add or update compiled files or packages",
+      "👷": "Add or update CI build system",
+      "🔧": "Add or update configuration files",
+      "⏪": "Revert changes"
+    }
+  },
+  "angular": {
+    "name": "Angular Commit Convention",
+    "description": "Follow the Angular commit message format",
+    "format": "<type>(<scope>): <subject>",
+    "types": {
+      "feat": "A new feature",
+      "fix": "A bug fix",
+      "docs": "Documentation changes",
+      "style": "Code style changes",
+      "refactor": "Code refactoring",
+      "perf": "Performance improvements",
+      "test": "Adding tests",
+      "build": "Build changes",
+      "ci": "CI changes",
+      "chore": "Maintenance tasks"
+    }
+  }
+}

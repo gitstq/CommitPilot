@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "commitpilot"
+version = "1.0.0"
+description = "🚀 CommitPilot - Intelligent Git Commit Assistant CLI | 智能Git提交助手"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "gitstq", email = "gitstq@users.noreply.github.com"}
+]
+keywords = ["git", "commit", "ai", "cli", "developer-tools", "automation"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Version Control :: Git",
+    "Topic :: Utilities",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "black>=23.0", "mypy>=1.0"]
+
+[project.scripts]
+commitpilot = "commitpilot.cli:main"
+cp = "commitpilot.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/gitstq/CommitPilot"
+Documentation = "https://github.com/gitstq/CommitPilot#readme"
+Repository = "https://github.com/gitstq/CommitPilot"
+Issues = "https://github.com/gitstq/CommitPilot/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+commitpilot = ["py.typed", "templates/*.json"]
